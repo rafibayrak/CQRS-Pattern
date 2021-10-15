@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediatorProject.Dtos\MediatorProject.Dtos.csproj" />
+    <ProjectReference Include="..\MediatorProject.Model\MediatorProject.Model.csproj" />
+  </ItemGroup>
+
+</Project>
