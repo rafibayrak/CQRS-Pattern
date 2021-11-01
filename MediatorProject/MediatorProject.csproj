@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.20" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,6 +22,10 @@
     <ProjectReference Include="..\MediatorProject.Core\MediatorProject.Core.csproj" />
     <ProjectReference Include="..\MediatorProject.Data\MediatorProject.Data.csproj" />
     <ProjectReference Include="..\MediatorProject.Model\MediatorProject.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="WebInterface\" />
   </ItemGroup>
 
 </Project>

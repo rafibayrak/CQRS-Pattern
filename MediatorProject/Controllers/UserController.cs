@@ -1,12 +1,13 @@
-﻿using MediatorProject.CommandQueries;
-using MediatorProject.Core.IServices;
+﻿using MediatorProject.CommandQueries.UserQueries;
 using MediatorProject.Models;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace MediatorProject.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase

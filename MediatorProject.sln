@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject", "MediatorProject\MediatorProject.csproj", "{C7E65C8A-D01B-4B0B-B296-0D9FA7D9D457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject", "MediatorProject\MediatorProject.csproj", "{C7E65C8A-D01B-4B0B-B296-0D9FA7D9D457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.Core", "MediatorProject.Core\MediatorProject.Core.csproj", "{1A25A51C-64D7-49BF-BE5F-F01F705EB982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.Core", "MediatorProject.Core\MediatorProject.Core.csproj", "{1A25A51C-64D7-49BF-BE5F-F01F705EB982}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.Data", "MediatorProject.Data\MediatorProject.Data.csproj", "{47E25797-B0C2-4845-9252-FF5716A98AA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.Data", "MediatorProject.Data\MediatorProject.Data.csproj", "{47E25797-B0C2-4845-9252-FF5716A98AA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.Business", "MediatorProject.Business\MediatorProject.Business.csproj", "{56FD92DF-7143-44A6-AFDF-1E27872C9DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.Business", "MediatorProject.Business\MediatorProject.Business.csproj", "{56FD92DF-7143-44A6-AFDF-1E27872C9DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.Model", "MediatorProject.Model\MediatorProject.Model.csproj", "{99B95F31-7BCB-4889-9932-169CBAD4EF47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.Model", "MediatorProject.Model\MediatorProject.Model.csproj", "{99B95F31-7BCB-4889-9932-169CBAD4EF47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.CommandHandlers", "MediatorProject.CommandHandlers\MediatorProject.CommandHandlers.csproj", "{F19FED23-D8FA-4C86-A43B-14059F19E0A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.CommandHandlers", "MediatorProject.CommandHandlers\MediatorProject.CommandHandlers.csproj", "{F19FED23-D8FA-4C86-A43B-14059F19E0A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.CommandQueries", "MediatorProject.CommandQueries\MediatorProject.CommandQueries.csproj", "{27050D49-9560-44E1-8569-B32AA244FD78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.CommandQueries", "MediatorProject.CommandQueries\MediatorProject.CommandQueries.csproj", "{27050D49-9560-44E1-8569-B32AA244FD78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorProject.Dtos", "MediatorProject.Dtos\MediatorProject.Dtos.csproj", "{88A331CF-493B-49BD-8056-D797AD0C35E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorProject.Dtos", "MediatorProject.Dtos\MediatorProject.Dtos.csproj", "{88A331CF-493B-49BD-8056-D797AD0C35E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SsoTrial", "SsoTrial\SsoTrial.csproj", "{81D2A21B-10F1-45ED-A9F6-A1BAC082CBB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{88A331CF-493B-49BD-8056-D797AD0C35E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88A331CF-493B-49BD-8056-D797AD0C35E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88A331CF-493B-49BD-8056-D797AD0C35E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D2A21B-10F1-45ED-A9F6-A1BAC082CBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D2A21B-10F1-45ED-A9F6-A1BAC082CBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D2A21B-10F1-45ED-A9F6-A1BAC082CBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D2A21B-10F1-45ED-A9F6-A1BAC082CBB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

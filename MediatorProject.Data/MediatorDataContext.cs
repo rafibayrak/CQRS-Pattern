@@ -1,11 +1,9 @@
-﻿
-using MediatorProject.Core.IRepositories;
-using MediatorProject.Models;
+﻿using MediatorProject.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MediatorProject.Data
 {
-    public class MediatorDataContext : DbContext, IMediatorDataContext
+    public class MediatorDataContext : DbContext
     {
         public MediatorDataContext(DbContextOptions<MediatorDataContext> options) : base(options)
         {
