@@ -1,7 +1,21 @@
-<div>
-  <input placeholder="User Name/Email" type="text" [(ngModel)]="login.userName" />
-  <br><br>
-  <input placeholder="Password" type="password" [(ngModel)]="login.password" />
-  <br><br>
-  <button (click)="onClick()">Submit</button>
-</div>
+<mat-grid-list cols="2" [rowHeight]="'100%'" [gutterSize]="'1px'">
+  <mat-grid-tile class="backGround w-100 h-100 text-align-center" [colspan]="1" [rowspan]="1">
+    <mat-card style="text-align: end;">
+      <div class="h-25 text-align-center">
+        <h2 style="font-family: 'Roboto';">RaShadow</h2>
+        <img src="./../../../assets/media/logos/logo-letter-1.png">
+      </div>
+      <form>
+        <mat-form-field class="w-100">
+          <mat-label>User Name/Email</mat-label>
+          <input matInput type="text" [formControl]="emailFormControl" required>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [formControl]="passwordFormControl" required>
+        </mat-form-field>
+        <button mat-raised-button (click)="onClick()" color="primary"> Submit <mat-icon>send</mat-icon></button>
+      </form>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

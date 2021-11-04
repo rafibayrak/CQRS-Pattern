@@ -1,4 +1,26 @@
-<p>
-  home works!
-  rafi
-</p>
+<div style="display: flex; height: 100%; position: relative;">
+  <button mat-mini-fab [@popOverState]="getStateName()" (click)="onClick()">
+    <mat-icon *ngIf="isOpened()">chevron_left</mat-icon>
+    <mat-icon *ngIf="!isOpened()">chevron_right</mat-icon>
+  </button>
+  <div class="h-100" style="width: 75px; background: #9454ec;">
+    <mat-selection-list style="text-align: end;" [multiple]="false">
+      <mat-list-option style="padding: 0;" [value]="1"><mat-icon>home</mat-icon></mat-list-option>
+      <mat-list-option style="padding: 0;" [value]="2"><mat-icon>send</mat-icon></mat-list-option>
+      <mat-list-option style="padding: 0;" [value]="3"><mat-icon>send</mat-icon></mat-list-option>
+    </mat-selection-list>
+  </div>
+  <mat-sidenav-container class="h-100 w-100">
+    <mat-sidenav #sidenav mode="side" opened="true" style="min-width: 300px;" class="shadow_right" autosize>
+      <app-aside-left-menu></app-aside-left-menu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div>
+        <div style="padding: 20px">
+          <router-outlet></router-outlet>
+
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

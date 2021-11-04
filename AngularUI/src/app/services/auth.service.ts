@@ -1,17 +1,19 @@
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Login } from '../models';
+import { ControllerService } from './controler.service';
 
 @Injectable({ providedIn: 'root' })
-export class AuthService {
-  apiUrl: string;
+export class AuthService extends ControllerService {
   constructor(
-    private httpClient: HttpClient
+    httpClient: HttpClient,
+    _router: Router
   ) {
-    this.apiUrl = 'api/Auth'
+    super('Auth', httpClient, _router);
   }
 
   authentication(login: Login) {
-    return this.httpClient.post(this.apiUrl, login);
+    return this.post('', login);
   }
 }
