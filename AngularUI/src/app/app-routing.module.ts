@@ -11,7 +11,8 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule),
     canActivate: [AuthGuard]
-  }
+  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -1,0 +1,54 @@
+.asideBar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.asideBar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.asideBar::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
+.asideBar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.asideBar {
+  max-height: 90%;
+}
+
+.overFlowAuto {
+  overflow: auto;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.asideMainMenu {
+  width: 75px;
+  position: relative;
+  min-width: 75px;
+}
+
+.asideMainMenuContent {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.top-scroll-btn {
+  box-shadow: 0px 1px #888888;
+}
+
+.bottom-scroll-btn {
+  box-shadow: 0px -1px #888888;
+}

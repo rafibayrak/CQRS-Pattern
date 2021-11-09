@@ -1,37 +1,43 @@
 <mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Personal data
-      </mat-panel-title>
-      <mat-panel-description>
-        <mat-icon>account_circle</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Destination
-      </mat-panel-title>
-      <mat-panel-description>
-        <mat-icon>map</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-
-  </mat-expansion-panel>
-
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Day of the trip
-      </mat-panel-title>
-      <mat-panel-description>
-        <mat-icon>date_range</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-  </mat-expansion-panel>
+  <mat-form-field class="w-100" appearance="fill">
+    <mat-label>Filter</mat-label>
+    <input matInput [(ngModel)]="filter">
+    <mat-icon class="color-primary" matPrefix>search</mat-icon>
+  </mat-form-field>
+  <button mat-button class="custom-menu" *ngIf="isActiveBackButton()" (click)="backClick()">
+    <mat-icon>arrow_back</mat-icon> back
+  </button>
+  <ng-container *ngFor="let item of getMenus()">
+    <ng-container *ngIf="getSubMenu(item)?.length">
+      <mat-expansion-panel *ngIf="item.title">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="custom-menu">
+            {{item.title}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-selection-list [multiple]="false">
+          <ng-container *ngFor="let links of getSubMenu(item)| search:'linkName,link':filter">
+            <mat-list-option class="custom-menu" matTooltip="{{links.link}}" *ngIf="links.link"
+              (click)="routerLink(links)" matTooltipPosition="after" [value]="links.id">
+              {{links.link}}
+            </mat-list-option>
+            <mat-list-option class="custom-menu" matTooltip="{{links.title}}" *ngIf="links.title"
+              (click)="selectionMenu(links)" matTooltipPosition="after" [value]="links.id">
+              <div>{{links.title}}
+                <mat-icon [inline]="true">arrow_right</mat-icon>
+              </div>
+            </mat-list-option>
+          </ng-container>
+        </mat-selection-list>
+      </mat-expansion-panel>
+    </ng-container>
+  </ng-container>
+  <mat-selection-list [multiple]="false">
+    <ng-container *ngFor="let links of getMenus()| search:'linkName,link':filter">
+      <mat-list-option class="custom-menu" matTooltip=" {{links.link}}" *ngIf="links.link" (click)="routerLink(links)"
+        matTooltipPosition="after" [value]="links.id">
+        {{links.link}}
+      </mat-list-option>
+    </ng-container>
+  </mat-selection-list>
 </mat-accordion>

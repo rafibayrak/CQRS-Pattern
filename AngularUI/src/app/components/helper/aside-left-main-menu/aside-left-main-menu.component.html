@@ -1,0 +1,21 @@
+<div [@leftMenuState]="getLeftMenuStateName()" class="h-100 asideMainMenu bg-primary" style="color:white">
+  <div class="w-100 asideMainMenuContent">
+    <button class="margin-bottom-8px margin-top-8px top-scroll-btn" mat-button (mousedown)="scrollTopDown()"
+      (mouseup)="scrollTopUp()">
+      <mat-icon>expand_less</mat-icon>
+    </button>
+  </div>
+  <mat-selection-list #widgetsContent class="asideBar overFlowAuto vertical-center" [(ngModel)]="deneme"
+    [style]="'height:'+ height+'px; text-align: end;'" [multiple]="false" (selectionChange)="selectionChange($event)">
+    <mat-list-option style="color:white" *ngFor="let item of angularLeftMenu" matTooltip="{{item.toolTipText}}" matTooltipPosition="after"
+      [value]="item.value">
+      <mat-icon>{{item.icon}}</mat-icon>
+    </mat-list-option>
+  </mat-selection-list>
+  <div class="w-100" style="bottom:0; position:absolute; text-align: center;">
+    <button class="margin-bottom-8px margin-top-8px bottom-scroll-btn" mat-button (mousedown)="scrollBottomDown()"
+      (mouseup)="scrollBottomUp()">
+      <mat-icon>expand_more</mat-icon>
+    </button>
+  </div>
+</div>

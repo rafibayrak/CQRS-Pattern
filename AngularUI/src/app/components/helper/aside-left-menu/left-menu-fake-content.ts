@@ -1,0 +1,43 @@
+import { AsideLeftMenuContent } from "src/app/models";
+
+export const leftMenuFakeValue: Array<AsideLeftMenuContent> = [
+  { id: 1, title: 'rafi', parentId: 0 },
+  { id: 8, title: 'rafi', parentId: 1 },
+  { id: 13, link: 'rafi12', linkName: 'rafi12', parentId: 8 },
+  { id: 14, link: 'rafi13', linkName: 'rafi13', parentId: 8 },
+  { id: 15, title: 'rafi14', parentId: 8 },
+  { id: 16, link: 'rafi22', linkName: 'rafi22', parentId: 15 },
+  { id: 17, title: 'rafi', parentId: 15 },
+  { id: 18, link: 'rafi', linkName: 'rafi', parentId: 17 },
+  { id: 9, title: 'rafi', parentId: 1 },
+  { id: 10, title: 'rafi', parentId: 1 },
+  { id: 11, link: 'rafi', linkName: 'rafi', parentId: 1 },
+  { id: 12, title: 'rafi', parentId: 1 },
+  { id: 2, title: 'rafi2', parentId: 0 },
+  { id: 3, title: 'rafi3', parentId: 0 },
+  { id: 4, title: 'rafi4', parentId: 0 },
+  { id: 5, title: 'rafi5', parentId: 0 },
+  { id: 6, title: 'rafi6', parentId: 0 },
+  { id: 7, link: 'rafi7', linkName: 'rafi7', parentId: 0 },
+];
+
+export const leftMenuFakeValue2: Array<AsideLeftMenuContent> = [
+  { id: 1, title: 'rdenemefi', parentId: 0 },
+  { id: 8, title: 'rdenemefi', parentId: 1 },
+  { id: 13, link: 'rdenemefi12', linkName: 'rdenemefi12', parentId: 8 },
+  { id: 14, link: 'rdenemefi13', linkName: 'rdenemefi13', parentId: 8 },
+  { id: 15, title: 'denemeafi14', parentId: 8 },
+  { id: 16, link: 'rdenemefi', linkName: 'rdenemefi', parentId: 15 },
+  { id: 17, title: 'denemeafi', parentId: 15 },
+  { id: 18, link: 'rdenemefi', linkName: 'rdenemefi', parentId: 17 },
+  { id: 9, title: 'rdenemefi', parentId: 1 },
+  { id: 10, title: 'denemeafi', parentId: 1 },
+  { id: 11, link: 'rdenemefi', linkName: 'rdenemefi', parentId: 1 },
+  { id: 12, title: 'denemeafi', parentId: 1 },
+  { id: 2, title: 'rdenemefi2', parentId: 0 },
+  { id: 3, title: 'rdenemefi3', parentId: 0 },
+  { id: 4, title: 'rdenemefi4', parentId: 0 },
+  { id: 5, title: 'rdenemefi5', parentId: 0 },
+  { id: 6, title: 'rdenemefi6', parentId: 0 },
+  { id: 7, title: 'rdenemefi7', parentId: 0 },
+];

@@ -1,0 +1,24 @@
+
+
+.mat-list-single-selected-option {
+  color: #773ae4;
+}
+
+.contentScrool::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.contentScrool::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.contentScrool::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.contentScrool::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

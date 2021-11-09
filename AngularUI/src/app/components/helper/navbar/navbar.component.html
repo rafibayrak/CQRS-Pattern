@@ -1,0 +1,18 @@
+<mat-card class="bg-primary" style="border-radius: 0; color:white">
+  <div style="display: flex; flex-direction:row">
+    <button mat-icon-button (click)="onClick()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div style="margin-top: 10px;width: 75%;">{{headerText}}</div>
+    <div style=" width: 25%;">
+      <mat-button-toggle-group style="float: right;" appearance="legacy" [formControl]="toggleValue">
+        <mat-button-toggle value="dark">
+          <mat-icon>dark_mode</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="light">
+          <mat-icon>light_mode</mat-icon>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </div>
+</mat-card>
