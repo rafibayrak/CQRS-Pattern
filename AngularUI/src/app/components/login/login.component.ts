@@ -13,12 +13,23 @@ export class LoginComponent implements OnInit {
   emailFormControl = new FormControl('', [Validators.required]);
   passwordFormControl = new FormControl('', [Validators.required]);
   login = new Login();
+  isNotLogin = false;
   constructor(
     private _authService: AuthService,
     private _router: Router
-  ) { }
+  ) {
+    _authService.checkAuth().subscribe(response => {
+      this._router.navigate(['/home']);
+    });
+  }
 
   ngOnInit() {
+    this.emailFormControl.valueChanges.subscribe(v => {
+      this.isNotLogin = false;
+    });
+    this.passwordFormControl.valueChanges.subscribe(v => {
+      this.isNotLogin = false;
+    });
   }
 
   onClick() {
@@ -33,7 +44,7 @@ export class LoginComponent implements OnInit {
         this._router.navigate(['/home']);
       },
       error => {
-
+        this.isNotLogin = true;
       }
     );
   }

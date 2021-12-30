@@ -5,6 +5,7 @@
         <h2 style="font-family: 'Roboto';">RaShadow</h2>
         <img src="./../../../assets/media/logos/logo-letter-1.png">
       </div>
+      <div *ngIf="isNotLogin" style="text-align: center;">User Name/Email or Password is incorrect</div>
       <form>
         <mat-form-field class="w-100">
           <mat-label>User Name/Email</mat-label>

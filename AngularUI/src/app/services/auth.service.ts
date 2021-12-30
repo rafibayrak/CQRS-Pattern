@@ -16,4 +16,8 @@ export class AuthService extends ControllerService {
   authentication(login: Login) {
     return this.post('', login);
   }
+
+  checkAuth(){
+    return this.get('/checkAuth');
+  }
 }

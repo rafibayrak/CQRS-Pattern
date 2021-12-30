@@ -5,7 +5,7 @@
       <mat-icon>expand_less</mat-icon>
     </button>
   </div>
-  <mat-selection-list #widgetsContent class="asideBar overFlowAuto vertical-center" [(ngModel)]="deneme"
+  <mat-selection-list #widgetsContent class="asideBar overFlowAuto vertical-center" [(ngModel)]="selectedPage"
     [style]="'height:'+ height+'px; text-align: end;'" [multiple]="false" (selectionChange)="selectionChange($event)">
     <mat-list-option style="color:white" *ngFor="let item of angularLeftMenu" matTooltip="{{item.toolTipText}}" matTooltipPosition="after"
       [value]="item.value">

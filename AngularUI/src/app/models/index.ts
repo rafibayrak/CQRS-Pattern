@@ -5,4 +5,4 @@ export {
   Login,
   AsideMainMenu,
   AsideLeftMenuContent
-}
+};

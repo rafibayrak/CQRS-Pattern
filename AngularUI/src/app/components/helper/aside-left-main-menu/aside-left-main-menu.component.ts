@@ -33,7 +33,7 @@ export class AsideLeftMainMenuComponent implements OnInit, AfterViewInit {
   @Output() selectedMainMenu = new EventEmitter<number>();
   height: number;
   scrollDownId: any;
-  deneme = [1];
+  selectedPage = [1];
   scrollUpId: any;
   angularLeftMenu = [
     { icon: 'home', toolTipText: 'Home', value: 1 },
@@ -55,8 +55,9 @@ export class AsideLeftMainMenuComponent implements OnInit, AfterViewInit {
     if (this.widgetsContent) {
       console.log(this.widgetsContent);
     }
-    this.deneme = [this.angularLeftMenu[0].value];
-    this.selectedMainMenu.emit(this.deneme[0]);
+
+    this.selectedPage = [this.angularLeftMenu[0].value];
+    this.selectedMainMenu.emit(this.selectedPage[0]);
   }
 
   scrollTopDown() {
