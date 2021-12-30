@@ -1,1 +1,3 @@
-# Mediator-Example
+# CQRS Pattern ve Repository Pattern
+
+MediatR Kütüphanesinden faydalanıldı
